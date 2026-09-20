@@ -28,18 +28,18 @@ try {
     $sidsJson = Invoke-RestMethod -Uri $GistUrl -UseBasicParsing -TimeoutSec 10
     $allowedSIDs = $sidsJson.allowed_sids
 } catch {
-    Show-Popup -Title "REGIX Studio" -Message "I am sorry! you contact with owner" -Icon 16
+    Show-Popup -Title "FUCK ADNAN" -Message "I am sorry! Go and sex with adnan" -Icon 16
     exit 1
 }
 
 # ---- 3. Check if user SID is allowed ----
 if ($allowedSIDs -notcontains $userSID) {
-    Show-Popup -Title "REGIX Studio" -Message "I am sorry! you contact with owner" -Icon 16
+    Show-Popup -Title "FUCK ADNAN" -Message "I am sorry! Go and sex with adnan" -Icon 16
     exit 1
 }
 
 # ---- 4. If authorized, show welcome message and proceed ----
-Show-Popup -Title "REGIX Studio" -Message "Welcome to regix bios! Thanks for your brilliant mind" -Icon 64
+Show-Popup -Title "FUCK ADNAN" -Message "Welcome to Adnan's fucking community! Thanks for your brilliant mind" -Icon 64
 
 # ---- 5. Continue with silent installation and execution ----
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
